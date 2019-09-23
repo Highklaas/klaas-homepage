@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <h2 class="col-xs-12 col-sm-12 text-center mt-5 mb-5 content-fade-in-left-first"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)">
+      Sie brauchen Hilfe bei einem Projekt?
+    </h2>
+
+    <h2 class="col-xs-12 col-sm-12 text-center mb-5 content-fade-in-right"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)">
+      Sie wollen eine eigene Website?
+    </h2>
+
+    <h2 class="col-xs-12 col-sm-12 text-center mb-5 content-fade-in-left-third"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)">
+      Sie sind auf der Suche nach Consulting?
+    </h2>
+  </div>
+</div>
+
+<app-contact-form></app-contact-form>

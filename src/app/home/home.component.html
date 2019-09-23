@@ -1,0 +1,130 @@
+<div class="background-wrapper">
+    <div class="background-image min-vh-100 background-team-one">
+        <h1 class="center-text fade-in"
+            inViewport
+            [inViewportOptions]="{ threshold: [0] }"
+            (inViewportAction)="onIntersection($event)">I craft original and effective brand experiences</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row content-fade-in-top"
+         inViewport
+         [inViewportOptions]="{ threshold: [0] }"
+         (inViewportAction)="onIntersection($event)">
+        <div class="col-12">
+            <h1>It’s all about finding the right partner</h1>
+        </div>
+        <div class="col-4">
+            <h3><i class="material-icons">home</i>Websites</h3>
+            <div class="card-text">
+                How you address new digital opportunities and changing market dynamics directly impacts your success.
+            </div>
+        </div>
+
+        <div class="col-4">
+            <h3><i class="material-icons">apps</i>Apps</h3>
+            <div class="card-text">
+                The mobile market is growing constantly. Get involved now!
+            </div>
+        </div>
+
+        <div class="col-4">
+            <h3><i class="material-icons">refresh</i>Refactoring</h3>
+            <div class="card-text">
+                You have a Projects that is already up and running? You are happy with the overall result but still want something changed?
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="black-background">
+  <div class="container">
+    <div class="row content-fade-in-top"
+         inViewport
+         [inViewportOptions]="{ threshold: [0] }"
+         (inViewportAction)="onIntersection($event)">
+      <div class="offset-md-2 col-md-8">
+        <h1 class="text-center">Werke</h1>
+        <div id="werke-carousel" class="carousel slide fade-in-width" data-ride="carousel"
+             inViewport
+             [inViewportOptions]="{ threshold: [0] }"
+             (inViewportAction)="onIntersection($event)">
+          <ol class="carousel-indicators">
+            <li data-target="#werke-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#werke-carousel" data-slide-to="1"></li>
+            <li data-target="#werke-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="/references?customer=bitb"><img class="d-block w-100" src="/assets/bitb.png" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="/references?customer=markenfilm"><img class="d-block w-100" src="/assets/markenfilm.png" alt="Second slide"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="/references?customer=bim"><img class="d-block w-100" src="/assets/bim.png" alt="Third slide"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#werke-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#werke-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="background-wrapper">
+  <div class="background-image min-vh-100 background-team-two">
+    <h1 class="center-text fade-in"
+        inViewport
+        [inViewportOptions]="{ threshold: [0] }"
+        (inViewportAction)="onIntersection($event)">I partner with creative brands and agencies</h1>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5 content-fade-in-top"
+         inViewport
+         [inViewportOptions]="{ threshold: [0] }"
+         (inViewportAction)="onIntersection($event)">
+        <div class="col-xs-12 col-sm-4 mt-5">
+            <div>
+                <div class="circle-icon-wrapper fade-in-width"
+                     inViewport
+                     [inViewportOptions]="{ threshold: [0] }"
+                     (inViewportAction)="onIntersection($event)">
+                    <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512.png" width="65" srcset="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512-p-500.png 500w, https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512.png 512w" sizes="65px" alt=""></div>
+                    <h4>Prototyping</h4>
+                    <p>‍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 mt-5">
+            <div class="circle-icon-wrapper fade-in-width"
+                 inViewport
+                 [inViewportOptions]="{ threshold: [0] }"
+                 (inViewportAction)="onIntersection($event)">
+                <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be6b0a0a17f4_icons8-code-512.png" width="60" alt=""></div>
+                <h4>Development</h4>
+                <p>‍</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 mt-5 mb-5">
+          <div class="circle-icon-wrapper fade-in-width no-margin mb-5"
+               inViewport
+               [inViewportOptions]="{ threshold: [0] }"
+               (inViewportAction)="onIntersection($event)">
+            <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4de40a17b5_icons8-design-512%202.png" width="60" alt=""></div>
+            <h4>Design</h4>
+            <p>‍</p>
+          </div>
+        </div>
+    </div>
+</div>

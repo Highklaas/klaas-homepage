@@ -1,0 +1,77 @@
+.project-info {
+    z-index: 2;
+    position: relative;
+    top: -100vh;
+    margin: 25vh 15vw;
+
+    img {
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        box-shadow: 5px 5px 10px 5px black;
+        transition: opacity 1.25s ease-in-out, left 1.25s ease-in-out;
+        &.inactive {
+            opacity: 0;
+            left: -50%;
+        }
+
+        &.active {
+            opacity: 1;
+            left: 0;
+        }
+    }
+    .project-text {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        transition: opacity 1.25s ease-in-out, right 1.25s ease-in-out;
+        &.inactive {
+            opacity: 0;
+            right: -50%;
+        }
+
+        &.active {
+            opacity: 1;
+            right: 0;
+        }
+    }
+}
+.background-wrapper {
+    height: 100vh;
+    margin-top: 40px;
+}
+.background-image {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    /* Full height */
+    height: 100%;
+    z-index: 1;
+    /* Center and scale the image nicely */
+    height: 100%;
+    width: auto;
+}
+
+.markenfilm {
+    background-image: url('/assets/markenfilm.png');
+}
+.bitb {
+    background-image: url('/assets/bitb.png');
+}
+.bim {
+    background-image: url('/assets/bim.png');
+}
+
+@media (max-width: 1199.98px) {
+    .project-info {
+        margin: 0;
+        img {
+            width: 50vw;
+            margin: 15px 25vw;
+            height: auto;
+        }
+        .project-text {
+            margin: 0 25vw;
+            text-align: center;
+        }
+    }
+}

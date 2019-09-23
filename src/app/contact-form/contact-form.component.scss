@@ -1,0 +1,18 @@
+input, textarea {
+  height: 50px;
+  padding-left: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #f5f5f7;
+  font-size: 13px;
+  &:focus {
+    border-color: #c72e2e;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+textarea {
+  height: auto;
+}

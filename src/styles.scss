@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+$navbar-dark-color:                rgb(255, 255, 255);
+$navbar-dark-hover-color:          rgb(255, 255, 255, 0.5);
+$navbar-dark-active-color:         rgb(255, 255, 255, 0.5);
+
+//$nav-link-padding-x: 3rem;
+$navbar-nav-link-padding-x: 1rem;
+
+$navbar-light-brand-color:                red;
+$navbar-light-brand-hover-color:          red;
+$navbar-dark-brand-color:                 red;
+$navbar-dark-brand-hover-color:           red;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.black-background {
+  color: white;
+  background-color: black;
+}
+
+.navbar-nav.mr-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+.navbar-nav .nav-link {
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+}

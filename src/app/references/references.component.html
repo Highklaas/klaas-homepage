@@ -1,0 +1,15 @@
+<div class="background-wrapper" *ngFor="let project of projects">
+    <div class="background-image min-vh-100" [ngClass]="project.className" [id]="project.className"></div>
+    <a class="project-info row inactive" href="{{project.link}}">
+        <img class="project-img col-xs-12 col-lg-6 inactive" [src]="project.img"
+            inViewport
+            [inViewportOptions]="{ threshold: [0] }"
+            (inViewportAction)="onIntersection($event)"/>
+        <div class="project-text col-xs-12 col-lg-6 inactive"
+            inViewport
+            [inViewportOptions]="{ threshold: [0] }"
+            (inViewportAction)="onIntersection($event)">
+            {{ project.text }}
+        </div>
+    </a>
+</div>
