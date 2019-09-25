@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +12,6 @@ import { ServicesComponent } from './services/services.component';
 import { RouterModule, Routes } from '@angular/router';
 import { InViewportModule } from 'ng-in-viewport';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-import { FormsModule }   from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,6 +40,7 @@ const appRoutes: Routes = [
     ),
     FormsModule,
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     InViewportModule,
     NgbModule
