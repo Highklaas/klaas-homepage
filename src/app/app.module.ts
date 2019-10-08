@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InViewportModule } from 'ng-in-viewport';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { WindowScrollDirectiveDirective } from './window-scroll-directive.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
       appRoutes,
     ),
     FormsModule,
+    HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
