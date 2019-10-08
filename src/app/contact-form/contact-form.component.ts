@@ -12,11 +12,7 @@ export class ContactFormComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   controls = {
-    name: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    time: new FormControl(''),
-    budget: new FormControl(''),
-    description: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required])
   };
 
   firstContactForm = new FormGroup(this.controls);
