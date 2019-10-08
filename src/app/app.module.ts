@@ -12,6 +12,7 @@ import { ServicesComponent } from './services/services.component';
 import { RouterModule, Routes } from '@angular/router';
 import { InViewportModule } from 'ng-in-viewport';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { WindowScrollDirectiveDirective } from './window-scroll-directive.directive';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ContactComponent,
     ReferencesComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    WindowScrollDirectiveDirective
   ],
   imports: [
     RouterModule.forRoot(

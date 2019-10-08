@@ -6,7 +6,7 @@
     width: auto;
 }
 .background-team-two {
-    filter: sepia(1) hue-rotate(310deg);
+    filter: sepia(0) hue-rotate(20deg);
     background: url('/assets/team-two.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -14,7 +14,7 @@
     background-size: cover;
 }
 .background-team-one {
-    filter: sepia(1) hue-rotate(310deg);
+    filter: sepia(0) hue-rotate(20deg);
     background: url('/assets/team-one.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -33,13 +33,7 @@
     font-weight: 900;
     font-size: 100px;
     color: rgb(247, 247, 247);
-    text-decoration: underline;
     text-align: center;
-    text-shadow:
-    2px 2px red,
-    2px -2px red,
-    -2px 2px red,
-    -2px -2px red;
 }
 
 .background-image h1 {

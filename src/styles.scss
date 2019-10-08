@@ -4,7 +4,8 @@ $navbar-dark-active-color:         rgb(255, 255, 255, 0.5);
 
 //$nav-link-padding-x: 3rem;
 $navbar-nav-link-padding-x: 1rem;
-
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1rem;
 $navbar-light-brand-color:                red;
 $navbar-light-brand-hover-color:          red;
 $navbar-dark-brand-color:                 red;
@@ -26,4 +27,19 @@ $navbar-dark-brand-hover-color:           red;
   font-size: 12px;
   font-family: Poppins;
   font-weight: 600;
+}
+#app-component {
+  .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar {
+    background-color: black;
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+.custom-link:focus {
+  outline: 0 !important;
 }

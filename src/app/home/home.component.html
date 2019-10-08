@@ -15,21 +15,21 @@
         <div class="col-12">
             <h1>It’s all about finding the right partner</h1>
         </div>
-        <div class="col-4">
+        <div class="col-4 custom-link" routerLink="/contact">
             <h3><i class="material-icons">home</i>Websites</h3>
             <div class="card-text">
                 How you address new digital opportunities and changing market dynamics directly impacts your success.
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 custom-link" routerLink="/contact">
             <h3><i class="material-icons">apps</i>Apps</h3>
             <div class="card-text">
                 The mobile market is growing constantly. Get involved now!
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 custom-link" routerLink="/contact">
             <h3><i class="material-icons">refresh</i>Refactoring</h3>
             <div class="card-text">
                 You have a Projects that is already up and running? You are happy with the overall result but still want something changed?
@@ -96,10 +96,11 @@
          (inViewportAction)="onIntersection($event)">
         <div class="col-xs-12 col-sm-4 mt-5">
             <div>
-                <div class="circle-icon-wrapper fade-in-width"
+                <div class="circle-icon-wrapper fade-in-width custom-link"
                      inViewport
                      [inViewportOptions]="{ threshold: [0] }"
-                     (inViewportAction)="onIntersection($event)">
+                     (inViewportAction)="onIntersection($event)"
+                     routerLink="/contact">
                     <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512.png" width="65" srcset="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512-p-500.png 500w, https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4ef20a17b3_icons8-web-design-512.png 512w" sizes="65px" alt=""></div>
                     <h4>Prototyping</h4>
                     <p>‍</p>
@@ -107,20 +108,22 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-4 mt-5">
-            <div class="circle-icon-wrapper fade-in-width"
+            <div class="circle-icon-wrapper fade-in-width custom-link"
                  inViewport
                  [inViewportOptions]="{ threshold: [0] }"
-                 (inViewportAction)="onIntersection($event)">
+                 (inViewportAction)="onIntersection($event)"
+                 routerLink="/contact">
                 <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be6b0a0a17f4_icons8-code-512.png" width="60" alt=""></div>
                 <h4>Development</h4>
                 <p>‍</p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-4 mt-5 mb-5">
-          <div class="circle-icon-wrapper fade-in-width no-margin mb-5"
+          <div class="circle-icon-wrapper fade-in-width no-margin mb-5 custom-link"
                inViewport
                [inViewportOptions]="{ threshold: [0] }"
-               (inViewportAction)="onIntersection($event)">
+               (inViewportAction)="onIntersection($event)"
+               routerLink="/contact">
             <div class="circle-icon-service"><img src="https://uploads-ssl.webflow.com/5b3f24a92cf0be75510a176e/5b3f24ab2cf0be4de40a17b5_icons8-design-512%202.png" width="60" alt=""></div>
             <h4>Design</h4>
             <p>‍</p>
